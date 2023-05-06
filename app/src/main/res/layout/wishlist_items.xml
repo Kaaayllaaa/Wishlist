@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="330dp"
+        android:layout_height="37dp"
+        android:layout_weight="1"
+        android:paddingTop="1dp"
+        android:text="Item name"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:textStyle="bold">
+
+        <TextView
+            android:id="@+id/itemLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="www.website_URL.com" />
+
+        <TextView
+            android:id="@+id/itemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:autoLink="all"
+            android:ellipsize="end"
+            android:lines="1"
+            android:linksClickable="true"
+            android:minHeight="48dp"
+            android:padding="0dp"
+            tools:text="item_cost" />
+    </LinearLayout>
+</LinearLayout>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+ 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wishlistRV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/item_name_Input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <EditText
+        android:id="@+id/item_price_Input"
+        android:layout_width="124dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Ex:5.99"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/submitButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979" />
+
+    <EditText
+        android:id="@+id/item_url_Input"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:textSize="13sp"
+        android:text=""
+        android:hint="Ex:https://www.Target.com/"
+        android:inputType="textUri"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <EditText
+        android:id="@+id/item_name_Input"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="Item Name"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/item_url_Input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.969" />
+</androidx.constraintlayout.widget.ConstraintLayout>
